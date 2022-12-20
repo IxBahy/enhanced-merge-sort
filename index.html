@@ -13,6 +13,10 @@
 <body class="bg-dark">
 
     <script>
+        const calcMid = (start, end) => {
+            mid = start + parseInt((end - start) / 2)
+            return mid;
+        }
 
         const binarySearch = (sortedArraySection, start, end, key) => {
 
@@ -24,7 +28,7 @@
             }
             //measuring the mid of the new indexes for the Array note: the Array is not sliced its the same size
             // while the indexes moves on it we change the position of the mid to match them
-            let binaryMid = start + Math.floor((end - start) / 2)
+            let binaryMid = calcMid(start, end)
             console.log('mid from binary search', binaryMid);
             //if Array indexes points on 2 elements only which are [ ... start,end ...]
             if (end - start == 1) {
@@ -120,7 +124,7 @@
 
 
 
-            if (end - start < 55 * 2) {
+            if (end - start < 55) {
                 // because the binaryInsertion is faster then the mergeSort untile n>55
                 //so we will use insertion on the small blocks that are < 55
                 insertionSort(atomicArray, start, end)
@@ -192,7 +196,7 @@
             if (start >= end) {
                 return;
             }
-            let mid = start + parseInt((end - start) / 2)
+            let mid = calcMid(start, end)
             //the recursion calls
             mergeSort(unsortedArray, start, mid)
             mergeSort(unsortedArray, mid + 1, end)
