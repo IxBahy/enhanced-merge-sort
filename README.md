@@ -1,5 +1,5 @@
 # enchanced-merge-sort
-here i used :
+here I used :
   -Binary search 
   -Insertion sort
   -merge sort
