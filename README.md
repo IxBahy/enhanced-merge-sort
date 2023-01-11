@@ -1,4 +1,5 @@
 # enchanced-merge-sort
+!!! code is in the index.html !!!
 here I used :
   -Binary search 
   -Insertion sort
