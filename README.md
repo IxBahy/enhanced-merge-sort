@@ -1,4 +1,4 @@
-# enchanced-merge-sort
+# enhanced-merge-sort
 ## run the script by typing ' node main.js ' in the terminal
 here I used : -Binary search -Insertion sort -merge sort
 
