@@ -1,5 +1,5 @@
 # enchanced-merge-sort
-
+## run the script by typing ' node main.js ' in the terminal
 here I used : -Binary search -Insertion sort -merge sort
 
 normal insertion is faster then merge until the n is >=43
